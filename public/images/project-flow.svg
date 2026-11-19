@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-label="Vista previa de un flujo de soporte automatizado">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#42bc3c"/>
-      <stop offset="1" stop-color="#00d9c0"/>
+      <stop stop-color="#ff2fb9"/>
+      <stop offset="1" stop-color="#00e5ff"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="360" rx="28" fill="#eaf8f5"/>
-  <rect x="36" y="36" width="528" height="288" rx="20" fill="#fff" stroke="#42bc3c" stroke-opacity=".25"/>
-  <text x="64" y="74" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#102718">FlowDesk</text>
-  <path d="M160 180 H236 M364 180 H440" stroke="#42bc3c" stroke-width="4" stroke-dasharray="7 7" stroke-linecap="round"/>
-  <path d="M230 174 l12 6 -12 6" fill="none" stroke="#42bc3c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M434 174 l12 6 -12 6" fill="none" stroke="#42bc3c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="600" height="360" rx="28" fill="#eafaff"/>
+  <rect x="36" y="36" width="528" height="288" rx="20" fill="#fff" stroke="#00e5ff" stroke-opacity=".32"/>
+  <text x="64" y="74" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#17123a">FlowDesk</text>
+  <path d="M160 180 H236 M364 180 H440" stroke="#ff2fb9" stroke-width="4" stroke-dasharray="7 7" stroke-linecap="round"/>
+  <path d="M230 174 l12 6 -12 6" fill="none" stroke="#ff2fb9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M434 174 l12 6 -12 6" fill="none" stroke="#ff2fb9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   <g transform="translate(58 138)">
-    <rect width="102" height="84" rx="16" fill="#f1f8ef" stroke="#42bc3c" stroke-opacity=".35"/>
-    <circle cx="51" cy="32" r="14" fill="#42bc3c" opacity=".18"/>
-    <text x="51" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#2f9130">IN</text>
-    <text x="51" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#102718">Incidencia</text>
+    <rect width="102" height="84" rx="16" fill="#f7f2ff" stroke="#ff2fb9" stroke-opacity=".4"/>
+    <circle cx="51" cy="32" r="14" fill="#ff2fb9" opacity=".22"/>
+    <text x="51" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#c2189a">IN</text>
+    <text x="51" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#17123a">Incidencia</text>
   </g>
   <g transform="translate(236 126)">
     <rect width="128" height="108" rx="18" fill="url(#g)"/>
@@ -23,11 +23,11 @@
     <text x="64" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#fff">Triaje</text>
   </g>
   <g transform="translate(440 138)">
-    <rect width="102" height="84" rx="16" fill="#f1f8ef" stroke="#42bc3c" stroke-opacity=".35"/>
-    <circle cx="51" cy="32" r="14" fill="#00d9c0" opacity=".2"/>
-    <text x="51" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#008f80">OK</text>
-    <text x="51" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#102718">Resuelto</text>
+    <rect width="102" height="84" rx="16" fill="#f7f2ff" stroke="#00e5ff" stroke-opacity=".4"/>
+    <circle cx="51" cy="32" r="14" fill="#39ff88" opacity=".28"/>
+    <text x="51" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#009950">OK</text>
+    <text x="51" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#17123a">Resuelto</text>
   </g>
-  <rect x="182" y="272" width="236" height="34" rx="17" fill="#102718"/>
-  <text x="300" y="294" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#b6ff6a">CRM · SAP · SQL · Node.js</text>
+  <rect x="182" y="272" width="236" height="34" rx="17" fill="#17123a"/>
+  <text x="300" y="294" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffe94a">CRM · SAP · SQL · Node.js</text>
 </svg>

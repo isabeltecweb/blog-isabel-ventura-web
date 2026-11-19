@@ -1,37 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Editor de código con acentos verdes">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Editor de código con acentos neón rosa y azul">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#42bc3c"/>
-      <stop offset="1" stop-color="#00d9c0"/>
+      <stop stop-color="#ff2fb9"/>
+      <stop offset="1" stop-color="#00e5ff"/>
     </linearGradient>
     <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
   </defs>
-  <circle cx="500" cy="90" r="110" fill="#42bc3c" opacity=".16" filter="url(#blur)"/>
-  <circle cx="110" cy="410" r="100" fill="#00d9c0" opacity=".14" filter="url(#blur)"/>
-  <rect x="46" y="60" width="548" height="360" rx="26" fill="#fff" fill-opacity=".94" stroke="#42bc3c" stroke-opacity=".28"/>
-  <path d="M46 86a26 26 0 0 1 26-26h496a26 26 0 0 1 26 26v26H46z" fill="#eff7ec"/>
-  <circle cx="76" cy="86" r="6" fill="#ff7a6b"/>
-  <circle cx="98" cy="86" r="6" fill="#ffc857"/>
-  <circle cx="120" cy="86" r="6" fill="#42bc3c"/>
-  <text x="374" y="91" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6b806f">isabel.dev / fullstack</text>
-  <rect x="46" y="112" width="132" height="308" fill="#f6faf5"/>
-  <rect x="66" y="142" width="76" height="10" rx="5" fill="#42bc3c" opacity=".75"/>
-  <rect x="66" y="170" width="94" height="8" rx="4" fill="#c8d9c9"/>
-  <rect x="66" y="194" width="84" height="8" rx="4" fill="#c8d9c9"/>
-  <rect x="66" y="218" width="102" height="8" rx="4" fill="#c8d9c9"/>
-  <rect x="66" y="242" width="72" height="8" rx="4" fill="#c8d9c9"/>
-  <rect x="200" y="142" width="120" height="9" rx="4" fill="#42bc3c"/>
-  <rect x="332" y="142" width="72" height="9" rx="4" fill="#00bfa5"/>
-  <rect x="222" y="172" width="160" height="9" rx="4" fill="#8aa38d"/>
-  <rect x="242" y="202" width="112" height="9" rx="4" fill="#00bfa5"/>
-  <rect x="222" y="232" width="196" height="9" rx="4" fill="#8aa38d"/>
-  <rect x="242" y="262" width="142" height="9" rx="4" fill="#42bc3c"/>
-  <rect x="222" y="292" width="92" height="9" rx="4" fill="#8aa38d"/>
-  <rect x="200" y="334" width="248" height="62" rx="14" fill="#102718" opacity=".94"/>
-  <circle cx="222" cy="357" r="5" fill="#42bc3c"/>
-  <circle cx="238" cy="357" r="5" fill="#00d9c0"/>
-  <circle cx="254" cy="357" r="5" fill="#b6ff6a"/>
-  <text x="222" y="382" font-family="ui-monospace, monospace" font-size="12" fill="#d9ffe0">npm run build ✓</text>
+  <circle cx="500" cy="90" r="110" fill="#ff2fb9" opacity=".2" filter="url(#blur)"/>
+  <circle cx="110" cy="410" r="100" fill="#00e5ff" opacity=".18" filter="url(#blur)"/>
+  <rect x="46" y="60" width="548" height="360" rx="26" fill="#fff" fill-opacity=".94" stroke="#ff2fb9" stroke-opacity=".32"/>
+  <path d="M46 86a26 26 0 0 1 26-26h496a26 26 0 0 1 26 26v26H46z" fill="#f7f2ff"/>
+  <circle cx="76" cy="86" r="6" fill="#ff4d6d"/>
+  <circle cx="98" cy="86" r="6" fill="#ffe94a"/>
+  <circle cx="120" cy="86" r="6" fill="#39ff88"/>
+  <text x="374" y="91" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#66608c">isabel.dev / fullstack</text>
+  <rect x="46" y="112" width="132" height="308" fill="#faf7ff"/>
+  <rect x="66" y="142" width="76" height="10" rx="5" fill="#ff2fb9" opacity=".8"/>
+  <rect x="66" y="170" width="94" height="8" rx="4" fill="#cfc7ee"/>
+  <rect x="66" y="194" width="84" height="8" rx="4" fill="#cfc7ee"/>
+  <rect x="66" y="218" width="102" height="8" rx="4" fill="#cfc7ee"/>
+  <rect x="66" y="242" width="72" height="8" rx="4" fill="#cfc7ee"/>
+  <rect x="200" y="142" width="120" height="9" rx="4" fill="#ff2fb9"/>
+  <rect x="332" y="142" width="72" height="9" rx="4" fill="#008cff"/>
+  <rect x="222" y="172" width="160" height="9" rx="4" fill="#8d86b5"/>
+  <rect x="242" y="202" width="112" height="9" rx="4" fill="#00e5ff"/>
+  <rect x="222" y="232" width="196" height="9" rx="4" fill="#8d86b5"/>
+  <rect x="242" y="262" width="142" height="9" rx="4" fill="#ff4d6d"/>
+  <rect x="222" y="292" width="92" height="9" rx="4" fill="#8d86b5"/>
+  <rect x="200" y="334" width="248" height="62" rx="14" fill="#17123a" opacity=".95"/>
+  <circle cx="222" cy="357" r="5" fill="#ff2fb9"/>
+  <circle cx="238" cy="357" r="5" fill="#00e5ff"/>
+  <circle cx="254" cy="357" r="5" fill="#ffe94a"/>
+  <text x="222" y="382" font-family="ui-monospace, monospace" font-size="12" fill="#d9d0ff">npm run build ✓</text>
   <g transform="translate(430 318)">
     <rect width="126" height="58" rx="16" fill="url(#g)"/>
     <text x="63" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#fff">&lt;/&gt; clean</text>

@@ -1,29 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-label="Vista previa de un panel de métricas">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-label="Vista previa de un panel de métricas con gráficos neón">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#42bc3c"/>
-      <stop offset="1" stop-color="#00d9c0"/>
+      <stop stop-color="#ff2fb9"/>
+      <stop offset="1" stop-color="#00e5ff"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="360" rx="28" fill="#eaf6e7"/>
-  <rect x="36" y="36" width="528" height="288" rx="20" fill="#fff" stroke="#42bc3c" stroke-opacity=".25"/>
-  <text x="64" y="74" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#102718">Aurora Dashboard</text>
-  <rect x="64" y="96" width="132" height="62" rx="12" fill="#f1f8ef"/>
-  <text x="80" y="120" font-family="system-ui, sans-serif" font-size="10" fill="#6b806f">Usuarios</text>
-  <text x="80" y="144" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#42bc3c">12.4k</text>
-  <rect x="212" y="96" width="132" height="62" rx="12" fill="#f1f8ef"/>
-  <text x="228" y="120" font-family="system-ui, sans-serif" font-size="10" fill="#6b806f">Conversión</text>
-  <text x="228" y="144" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#00bfa5">8.7%</text>
-  <rect x="360" y="96" width="176" height="62" rx="12" fill="#102718"/>
-  <text x="376" y="120" font-family="system-ui, sans-serif" font-size="10" fill="#a8d8b0">Tendencia</text>
-  <text x="376" y="144" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#b6ff6a">+18%</text>
-  <rect x="64" y="178" width="300" height="122" rx="14" fill="#f7fbf6"/>
+  <rect width="600" height="360" rx="28" fill="#ebe5ff"/>
+  <rect x="36" y="36" width="528" height="288" rx="20" fill="#fff" stroke="#ff2fb9" stroke-opacity=".28"/>
+  <text x="64" y="74" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#17123a">Aurora Dashboard</text>
+  <rect x="64" y="96" width="132" height="62" rx="12" fill="#f7f2ff"/>
+  <text x="80" y="120" font-family="system-ui, sans-serif" font-size="10" fill="#66608c">Usuarios</text>
+  <text x="80" y="144" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ff2fb9">12.4k</text>
+  <rect x="212" y="96" width="132" height="62" rx="12" fill="#f7f2ff"/>
+  <text x="228" y="120" font-family="system-ui, sans-serif" font-size="10" fill="#66608c">Conversión</text>
+  <text x="228" y="144" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#008cff">8.7%</text>
+  <rect x="360" y="96" width="176" height="62" rx="12" fill="#17123a"/>
+  <text x="376" y="120" font-family="system-ui, sans-serif" font-size="10" fill="#c9c2ee">Tendencia</text>
+  <text x="376" y="144" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffe94a">+18%</text>
+  <rect x="64" y="178" width="300" height="122" rx="14" fill="#faf7ff"/>
   <rect x="88" y="258" width="30" height="24" rx="5" fill="url(#g)" opacity=".55"/>
   <rect x="132" y="238" width="30" height="44" rx="5" fill="url(#g)" opacity=".7"/>
   <rect x="176" y="218" width="30" height="64" rx="5" fill="url(#g)" opacity=".85"/>
   <rect x="220" y="232" width="30" height="50" rx="5" fill="url(#g)" opacity=".7"/>
   <rect x="264" y="198" width="30" height="84" rx="5" fill="url(#g)"/>
-  <rect x="384" y="178" width="152" height="122" rx="14" fill="#f7fbf6"/>
-  <path d="M404 268 L440 244 L476 254 L512 214" fill="none" stroke="#42bc3c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="512" cy="214" r="7" fill="#00d9c0" stroke="#fff" stroke-width="3"/>
+  <rect x="384" y="178" width="152" height="122" rx="14" fill="#faf7ff"/>
+  <path d="M404 268 L440 244 L476 254 L512 214" fill="none" stroke="#00e5ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="512" cy="214" r="7" fill="#ff4d6d" stroke="#fff" stroke-width="3"/>
 </svg>
