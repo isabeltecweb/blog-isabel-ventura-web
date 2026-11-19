@@ -24,8 +24,8 @@
   </g>
   <g transform="translate(440 138)">
     <rect width="102" height="84" rx="16" fill="#f7f2ff" stroke="#00e5ff" stroke-opacity=".4"/>
-    <circle cx="51" cy="32" r="14" fill="#39ff88" opacity=".28"/>
-    <text x="51" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#009950">OK</text>
+    <circle cx="51" cy="32" r="14" fill="#20e3d2" opacity=".28"/>
+    <text x="51" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#007f78">OK</text>
     <text x="51" y="66" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#17123a">Resuelto</text>
   </g>
   <rect x="182" y="272" width="236" height="34" rx="17" fill="#17123a"/>

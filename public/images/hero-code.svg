@@ -12,7 +12,7 @@
   <path d="M46 86a26 26 0 0 1 26-26h496a26 26 0 0 1 26 26v26H46z" fill="#f7f2ff"/>
   <circle cx="76" cy="86" r="6" fill="#ff4d6d"/>
   <circle cx="98" cy="86" r="6" fill="#ffe94a"/>
-  <circle cx="120" cy="86" r="6" fill="#39ff88"/>
+  <circle cx="120" cy="86" r="6" fill="#20e3d2"/>
   <text x="374" y="91" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#66608c">isabel.dev / fullstack</text>
   <rect x="46" y="112" width="132" height="308" fill="#faf7ff"/>
   <rect x="66" y="142" width="76" height="10" rx="5" fill="#ff2fb9" opacity=".8"/>
