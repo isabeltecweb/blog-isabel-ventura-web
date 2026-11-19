@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://isabeltecweb.github.io/blog-isabel-ventura-web/sitemap-index.xml

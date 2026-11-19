@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://isabeltecweb.github.io').href;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#eef7eb" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Isabel Ventura" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <script is:inline>document.documentElement.classList.add('js')</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Isabel Rosa Ventura Acero",
+        "alternateName": "Isabel Ventura",
+        "jobTitle": "Desarrolladora Web Full Stack",
+        "url": "https://isabeltecweb.github.io/blog-isabel-ventura-web/",
+        "email": "isabelrventuraa@yahoo.com",
+        "telephone": "+34691563709",
+        "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" },
+        "description": "Desarrolladora web full stack y especialista en Operaciones y Soporte Tecnológico con más de 20 años de experiencia.",
+        "knowsAbout": ["React", "JavaScript", "Node.js", "Python", "SQL", "APIs REST", "Git", "SAP S/4HANA", "Salesforce", "Ciberseguridad"],
+        "sameAs": ["https://github.com/isabeltecweb"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="ambient" aria-hidden="true">
+      <span class="ambient-one"></span>
+      <span class="ambient-two"></span>
+      <span class="ambient-three"></span>
+    </div>
+    <slot />
+    <script>
+      import '../scripts/site.js';
+    </script>
+  </body>
+</html>

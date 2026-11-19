@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import HeroCarousel from '../components/HeroCarousel.astro';
+import About from '../components/About.astro';
+import Trajectory from '../components/Trajectory.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Isabel Ventura — Desarrolladora Web Full Stack';
+const description = 'Portfolio y blog de Isabel Ventura. Desarrolladora web full stack con más de 20 años de experiencia en operaciones, soporte tecnológico y automatización.';
+---
+
+<BaseLayout title={title} description={description}>
+  <Header />
+  <main id="main">
+    <HeroCarousel />
+
+    <div class="stack-strip" aria-label="Tecnologías y áreas de trabajo">
+      <div class="stack-track">
+        <span>React</span><span>JavaScript</span><span>Node.js</span><span>Python</span><span>SQL</span><span>APIs REST</span><span>Git</span><span>Salesforce</span><span>SAP S/4HANA</span><span>Excel avanzado</span>
+        <span>React</span><span>JavaScript</span><span>Node.js</span><span>Python</span><span>SQL</span><span>APIs REST</span><span>Git</span><span>Salesforce</span><span>SAP S/4HANA</span><span>Excel avanzado</span>
+      </div>
+    </div>
+
+    <About />
+    <Trajectory />
+    <Projects />
+    <Contact />
+  </main>
+  <Footer />
+</BaseLayout>

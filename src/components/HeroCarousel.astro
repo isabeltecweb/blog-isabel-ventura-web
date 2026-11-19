@@ -1,0 +1,202 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const slides = [
+  {
+    eyebrow: '01 / Portfolio',
+    prefix: 'Full stack con',
+    highlight: 'criterio propio',
+    text: 'Interfaces modernas, rápidas y accesibles. Combino React, JavaScript, Node, Python y SQL con más de 20 años resolviendo problemas complejos.',
+    cta: 'Ver proyectos',
+    href: '#proyectos',
+    image: `${base}images/hero-code.svg`,
+    alt: 'Ilustración de un editor de código con acentos verdes',
+    stat: 'React · Node.js · SQL',
+    tone: 'green'
+  },
+  {
+    eyebrow: '02 / Experiencia',
+    prefix: '20+ años',
+    highlight: 'resolviendo problemas',
+    text: 'Del análisis de procesos financieros al soporte tecnológico: diagnóstico, métricas y mejora continua aplicados a cada producto digital.',
+    cta: 'Conocer mi trayectoria',
+    href: '#trayectoria',
+    image: `${base}images/hero-dashboard.svg`,
+    alt: 'Panel de métricas con gráficos y tarjetas verdes',
+    stat: 'Datos · Excel · SAP',
+    tone: 'mint'
+  },
+  {
+    eyebrow: '03 / Automatización',
+    prefix: 'Flujos que',
+    highlight: 'suman foco',
+    text: 'Automatización con IA y CRM, help desk y optimización de procesos. Menos tareas repetitivas, más tiempo para lo que aporta valor.',
+    cta: 'Hablemos',
+    href: '#contacto',
+    image: `${base}images/hero-flow.svg`,
+    alt: 'Diagrama de automatización entre CRM, inteligencia artificial y SAP',
+    stat: 'Salesforce · IA · SAP',
+    tone: 'lime'
+  }
+];
+---
+
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container hero-frame">
+    <div class="carousel" data-carousel>
+      <div class="carousel-aurora" aria-hidden="true"></div>
+
+      <div class="slides">
+        {slides.map((slide, index) => (
+          <article
+            id={`hero-slide-${index + 1}`}
+            class:list={['slide', `tone-${slide.tone}`, { 'is-active': index === 0 }]}
+            role="tabpanel"
+            aria-labelledby={`hero-tab-${index + 1}`}
+            aria-hidden={index !== 0}
+            inert={index !== 0}
+            data-slide
+          >
+            <div class="slide-copy">
+              <p class="slide-eyebrow"><span class="pulse"></span>{slide.eyebrow}</p>
+              {index === 0 ? (
+                <h1 class="slide-title" id="hero-heading">{slide.prefix}<br /><span>{slide.highlight}</span></h1>
+              ) : (
+                <h2 class="slide-title">{slide.prefix}<br /><span>{slide.highlight}</span></h2>
+              )}
+              <p class="slide-text">{slide.text}</p>
+              <div class="slide-actions">
+                <a class="btn btn-primary" href={slide.href}>{slide.cta} <span aria-hidden="true">→</span></a>
+                <a class="btn btn-ghost" href="#sobre-mi">Sobre Isabel <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="slide-stat"><span aria-hidden="true">✦</span> {slide.stat}</p>
+            </div>
+
+            <div class="slide-visual">
+              <img src={slide.image} alt={slide.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" />
+              <div class="visual-chip">
+                <span class="chip-dot"></span>
+                <span>{index === 0 ? 'Disponible para proyectos' : index === 1 ? 'Madrid · España' : 'Automatización con criterio'}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <button class="carousel-arrow arrow-prev" type="button" data-prev aria-label="Destacado anterior">←</button>
+      <button class="carousel-arrow arrow-next" type="button" data-next aria-label="Destacado siguiente">→</button>
+
+      <div class="carousel-bottom">
+        <div class="carousel-dots" role="tablist" aria-label="Elegir destacado">
+          {slides.map((_, index) => (
+            <button
+              id={`hero-tab-${index + 1}`}
+              class:list={['dot', { 'is-active': index === 0 }]}
+              type="button"
+              role="tab"
+              aria-controls={`hero-slide-${index + 1}`}
+              aria-selected={index === 0}
+              aria-label={`Ir al destacado ${index + 1}`}
+              tabindex={index === 0 ? 0 : -1}
+              data-dot
+              data-index={index}
+            ></button>
+          ))}
+        </div>
+        <p class="sr-only" aria-live="polite" data-status>Destacado 1 de 3</p>
+        <span class="carousel-count" aria-hidden="true"><span data-count>01</span> / 03</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const carousel = document.querySelector('[data-carousel]');
+
+  if (carousel) {
+    const slides = Array.from(carousel.querySelectorAll('[data-slide]'));
+    const dots = Array.from(carousel.querySelectorAll('[data-dot]'));
+    const status = carousel.querySelector('[data-status]');
+    const count = carousel.querySelector('[data-count]');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let current = 0;
+    let timer;
+
+    function showSlide(index: number, focusDot = false) {
+      current = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        const active = i === current;
+        slide.classList.toggle('is-active', active);
+        slide.setAttribute('aria-hidden', String(!active));
+        if (active) slide.removeAttribute('inert');
+        else slide.setAttribute('inert', '');
+      });
+
+      dots.forEach((dot, i) => {
+        const active = i === current;
+        dot.classList.toggle('is-active', active);
+        dot.setAttribute('aria-selected', String(active));
+        dot.setAttribute('tabindex', active ? '0' : '-1');
+      });
+
+      if (status) status.textContent = `Destacado ${current + 1} de ${slides.length}`;
+      if (count) count.textContent = String(current + 1).padStart(2, '0');
+      if (focusDot) (dots[current] as HTMLElement).focus();
+    }
+
+    function stopCarousel() {
+      if (timer) window.clearInterval(timer);
+    }
+
+    function startCarousel() {
+      stopCarousel();
+      if (reduceMotion) return;
+      timer = window.setInterval(() => showSlide(current + 1), 6500);
+    }
+
+    carousel.querySelector('[data-prev]')?.addEventListener('click', () => {
+      showSlide(current - 1);
+      startCarousel();
+    });
+
+    carousel.querySelector('[data-next]')?.addEventListener('click', () => {
+      showSlide(current + 1);
+      startCarousel();
+    });
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        showSlide(Number((dot as HTMLElement).dataset.index));
+        startCarousel();
+      });
+    });
+
+    carousel.addEventListener('mouseenter', stopCarousel);
+    carousel.addEventListener('mouseleave', startCarousel);
+    carousel.addEventListener('focusin', stopCarousel);
+    carousel.addEventListener('focusout', (event) => {
+      if (!carousel.contains((event as FocusEvent).relatedTarget as Node)) startCarousel();
+    });
+
+    carousel.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        showSlide(current + 1, true);
+        startCarousel();
+      }
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        showSlide(current - 1, true);
+        startCarousel();
+      }
+    });
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stopCarousel();
+      else startCarousel();
+    });
+
+    startCarousel();
+  }
+</script>
